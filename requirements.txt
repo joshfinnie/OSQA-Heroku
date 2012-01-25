@@ -1,0 +1,10 @@
+django
+mysql-python
+python-openid
+psycopg2
+html5lib
+markdown
+git+git://github.com/robhudson/django-debug-toolbar.git
+git+git://github.com/dcramer/django-sphinx.git
+South
+gunicorn

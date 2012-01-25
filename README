@@ -1,0 +1,37 @@
+*******************************************************************************
+OSQA ON HEROKU
+*******************************************************************************
+
+OSQA is the free, open source Q&A system you've been waiting for. Your OSQA 
+site is more than just an FAQ page, it is a full-featured Q&A community. Users 
+earn points and badges for useful participation, and everyone in the community 
+wins. [1]
+
+This repository contains a working copy of OSQA that will run on Heroku [2].
+There were a few changes from the standard install to make everything run 
+smoothly. I also added the Gunicorn WSGI webserver [3] for your convienence.
+
+REQUIREMENTS
+
+see requirements.txt
+
+INSTALLATION
+
+1 - Clone repository : git clone https://github.com/joshfinnie/osqa-heroku
+2 - Create Heroku app : heroku create --stack cedar
+3 - Push app to Heroku : git push heroku master
+4 - Sync DB : heroku run python osqa/manage.py syncdb --all
+5 - Migrate DB : heroku run python osqa/manage.py migrate forum --fake
+6 - View app : heroku open
+
+RUN LOCALLY
+
+1 - Create Virtualenv : virtualenv venv --distribute
+2 - Source virtualenv : source venv/bin/activate
+3 - Install dependencies : pip install -r requirements.txt
+4 - Run app through Foreman : foreman start
+
+References:
+[1] http://www.osqa.net/
+[2] http://www.heroku.com/
+[3] http://gunicorn.org/
