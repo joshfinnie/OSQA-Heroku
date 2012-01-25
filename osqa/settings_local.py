@@ -16,7 +16,9 @@ logging.basicConfig(
 )
 
 #ADMINS and MANAGERS
-ADMINS = (('Josh Finnie', 'josh@jfin.us'),)
+ADMINS = (
+        #('Your Name', 'your@email'),
+        )
 MANAGERS = ADMINS
 
 DEBUG = False
@@ -65,7 +67,7 @@ SESSION_ENGINE = 'django.contrib.sessions.backends.db'
 # This should be equal to your domain name, plus the web application context.
 # This shouldn't be followed by a trailing slash.
 # I.e., http://www.yoursite.com or http://www.hostedsite.com/yourhostapp
-APP_URL = 'http://morning-winter-9033.herokuapp.com/'
+APP_URL = 'http://YOURURL'
 
 #LOCALIZATIONS
 TIME_ZONE = 'America/New_York'
