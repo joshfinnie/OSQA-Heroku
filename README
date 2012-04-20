@@ -18,12 +18,13 @@ see requirements.txt
 INSTALLATION
 
 1 - Clone repository : git clone https://github.com/joshfinnie/osqa-heroku yourapp
-2 - Create Heroku app : heroku create --stack cedar
-3 - Push app to Heroku : git push heroku master
-4 - Sync DB : heroku run python osqa/manage.py syncdb --all
-5 - Create database superuser : Follow instructions in terminal
-5 - Migrate DB : heroku run python osqa/manage.py migrate forum --fake
-6 - View app : heroku open
+2 - Fill out your settings : edit osqa/settings_local.py
+3 - Create Heroku app : heroku create --stack cedar
+4 - Push app to Heroku : git push heroku master
+5 - Sync DB : heroku run python osqa/manage.py syncdb --all
+6 - Create database superuser : Follow instructions in terminal
+7 - Migrate DB : heroku run python osqa/manage.py migrate forum --fake
+8 - View app : heroku open
 
 RUN LOCALLY
 
