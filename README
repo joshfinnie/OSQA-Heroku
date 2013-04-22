@@ -17,7 +17,7 @@ see requirements.txt
 
 INSTALLATION
 
-1 - Clone repository : git clone https://github.com/joshfinnie/osqa-heroku yourapp
+1 - Clone repository : git clone https://github.com/joshfinnie/OSQA-Heroku.git yourapp
 2 - Fill out your settings : edit osqa/settings_local.py
 3 - Create Heroku app : heroku create --stack cedar
 4 - Push app to Heroku : git push heroku master
